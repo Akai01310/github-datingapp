@@ -1,0 +1,19 @@
+{
+    "cSpell.words": [
+        "Autoincrement",
+        "datepicker",
+        "datingapp",
+        "devkit",
+        "hmac",
+        "HMACSHA"
+    ],
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "datingapp.db",
+            "database": "datingapp"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

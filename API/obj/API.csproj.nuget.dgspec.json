@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Worksqace\\DatingApp\\API\\API.csproj": {}
+    "D:\\Worksqace\\DatingApp\\api\\API.csproj": {}
   },
   "projects": {
-    "D:\\Worksqace\\DatingApp\\API\\API.csproj": {
+    "D:\\Worksqace\\DatingApp\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Worksqace\\DatingApp\\API\\API.csproj",
+        "projectUniqueName": "D:\\Worksqace\\DatingApp\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\Worksqace\\DatingApp\\API\\API.csproj",
+        "projectPath": "D:\\Worksqace\\DatingApp\\api\\API.csproj",
         "packagesPath": "C:\\Users\\hoix1\\.nuget\\packages\\",
-        "outputPath": "D:\\Worksqace\\DatingApp\\API\\obj\\",
+        "outputPath": "D:\\Worksqace\\DatingApp\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hoix1\\AppData\\Roaming\\NuGet\\NuGet.Config"

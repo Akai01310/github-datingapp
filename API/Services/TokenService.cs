@@ -1,11 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Data;
+
+
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
 using System.Text;
-using System.Threading.Tasks;
 using API.Entities;
 using API.Interfaces;
 using Microsoft.IdentityModel.Tokens;
@@ -19,7 +16,7 @@ namespace API.Services
 
         public TokenService(IConfiguration config)
         {
-            _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["TokenKey"]));
+            _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("super secret unguessable key super secret unguessable key super secret unguessable key"));
         }
         public string CreateToken(AppUser user)
         {
@@ -34,7 +31,8 @@ namespace API.Services
             {
                 Subject = new ClaimsIdentity(claims),
                 Expires = DateTime.Now.AddDays(7),
-                SigningCredentials = creds
+                SigningCredentials = creds,
+                
             };
 
             var tokenHandler = new JwtSecurityTokenHandler();

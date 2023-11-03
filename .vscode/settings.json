@@ -4,8 +4,10 @@
         "datepicker",
         "datingapp",
         "devkit",
+        "favourite",
         "hmac",
-        "HMACSHA"
+        "HMACSHA",
+        "loggen"
     ],
     "sqltools.connections": [
         {

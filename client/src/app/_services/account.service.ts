@@ -9,7 +9,7 @@ import { ReplaySubject } from 'rxjs';
 })
 export class AccountService {
   baseUrl = 'https://127.0.0.1:5001/api/';
-  private currentUserSource = new ReplaySubject <User> (1);
+  private currentUserSource = new ReplaySubject<User>(1);
   currentUser$ = this.currentUserSource.asObservable();
   setCurrentUser: any;
 

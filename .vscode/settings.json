@@ -1,13 +1,18 @@
 {
     "cSpell.words": [
         "Autoincrement",
+        "bootswatch",
         "datepicker",
         "datingapp",
         "devkit",
         "favourite",
         "hmac",
         "HMACSHA",
-        "loggen"
+        "Không",
+        "loggen",
+        "titlecase",
+        "toastr",
+        "truy"
     ],
     "sqltools.connections": [
         {

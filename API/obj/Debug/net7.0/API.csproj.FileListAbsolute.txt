@@ -77,3 +77,6 @@ D:\Worksqace\DatingApp\api\obj\Debug\net7.0\refint\API.dll
 D:\Worksqace\DatingApp\api\obj\Debug\net7.0\API.pdb
 D:\Worksqace\DatingApp\api\obj\Debug\net7.0\API.genruntimeconfig.cache
 D:\Worksqace\DatingApp\api\obj\Debug\net7.0\ref\API.dll
+D:\Worksqace\datingapp\api\bin\Debug\net7.0\Data\UserSeedData.json
+D:\Worksqace\DatingApp\API\bin\Debug\net7.0\AutoMapper.dll
+D:\Worksqace\DatingApp\API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

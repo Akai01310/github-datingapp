@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Worksqace\\DatingApp\\API\\API.csproj": {}
+    "D:\\Worksqace\\datingapp\\API\\API.csproj": {}
   },
   "projects": {
-    "D:\\Worksqace\\DatingApp\\API\\API.csproj": {
+    "D:\\Worksqace\\datingapp\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Worksqace\\DatingApp\\API\\API.csproj",
+        "projectUniqueName": "D:\\Worksqace\\datingapp\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\Worksqace\\DatingApp\\API\\API.csproj",
+        "projectPath": "D:\\Worksqace\\datingapp\\API\\API.csproj",
         "packagesPath": "C:\\Users\\hoix1\\.nuget\\packages\\",
-        "outputPath": "D:\\Worksqace\\DatingApp\\API\\obj\\",
+        "outputPath": "D:\\Worksqace\\datingapp\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hoix1\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[7.0.12, )"
@@ -98,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }

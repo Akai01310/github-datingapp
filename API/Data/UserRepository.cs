@@ -23,6 +23,11 @@ namespace API.Data
             _context = context;
         }
 
+        internal static Task GetUserByUsernameAsync(string v)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<MemberDto> GetMemberAsync(string username)
         {
             return await _context.Users

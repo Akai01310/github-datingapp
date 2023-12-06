@@ -12,8 +12,6 @@ export class AccountService {
   baseUrl = environment.apiUrl;
   private currentUserSource = new ReplaySubject<User>(1);
   currentUser$ = this.currentUserSource.asObservable();
-  setCurrentUser: any;
-
   constructor(private readonly http: HttpClient) { }
 
   login(model: any){

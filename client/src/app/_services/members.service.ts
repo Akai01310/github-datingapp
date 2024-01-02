@@ -1,13 +1,9 @@
 import { Injectable } from '@angular/core';
 import { environment } from '../environments/environment';
-import { HttpClient } from '@angular/common/http';
-import { Member } from '../_models/member';
-import {map, of} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-
 export class MembersService {
   baseUrl = environment.apiUrl;
   members: Member[] = [];

@@ -34,16 +34,16 @@ export class RegisterComponent implements OnInit {
       country: ['', Validators.required],
       password: ['', [Validators.required, 
         Validators.minLength(4), Validators.maxLength(8)]],
-      confirmPassword: ['', [Validators.required, this.matchValues('password')]]
+      // confirmPassword: ['', [Validators.required, this.matchValues('password')]]
     })
   }
 
-  matchValues(matchTo: string): ValidatorFn {
-    return (control: AbstractControl) => {
-      return control?.value === control?.parent?.controls[matchTo].value
-        ? null : {isMatching: true}
-    }
-  }
+  // matchValues(matchTo: string): ValidatorFn {
+  //   return (control: AbstractControl) => {
+  //     return control?.value === control?.parent?.controls[matchTo].value
+  //       ? null : {isMatching: true}
+  //   }
+  // }
 
   register() {
     this.accountService.register(this.registerForm.value).subscribe(response => {

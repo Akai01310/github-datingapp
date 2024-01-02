@@ -82,3 +82,4 @@ D:\Worksqace\datingapp\api\obj\Debug\net7.0\refint\API.dll
 D:\Worksqace\datingapp\api\obj\Debug\net7.0\API.pdb
 D:\Worksqace\datingapp\api\obj\Debug\net7.0\API.genruntimeconfig.cache
 D:\Worksqace\datingapp\api\obj\Debug\net7.0\ref\API.dll
+D:\Worksqace\datingapp\api\obj\Debug\net7.0\API.sourcelink.json

@@ -16,7 +16,6 @@ namespace API.Interfaces
         Task<AppUser> GetUserByIdAsync(int id);
         Task<PagedList<MemberDto>> GetMembersAsync(UserParams userParams);
         Task<MemberDto> GetMemberAsync(string username);
-        Task GetMembersAsync();
-        Task GetUserByUsernameAsync(string username);
+        Task<AppUser> GetUserByUsernameAsync(string username);
     }
 }

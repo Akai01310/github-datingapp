@@ -7,8 +7,7 @@ namespace API.Helpers
 {
     public class LikesParams : PaginationParams
     {
-        internal string Predicate;
-
-        public int UserId { get; internal set; }
+        public int UserId { get; set; }
+        public string Predicate { get; set; }
     }
 }

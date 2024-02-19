@@ -8,7 +8,7 @@ namespace API.DTOs
 {
     public class RegisterDto
     {
-        [Required] public string UserName { get; set; }
+        [Required] public string Username { get; set; }
         [Required] public string KnownAs { get; set; }
         [Required] public string Gender { get; set; }
         [Required] public DateTime DateOfBirth { get; set; }

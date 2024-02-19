@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using API.Entities;
 using API.Extensions;
+using API.Helpers;
 using API.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -58,5 +59,6 @@ namespace API.Controllers
                 users.PageSize, users.TotalCount, users.TotalPages);
 
             return Ok(users);
-        }}
+        }
+        }
 }

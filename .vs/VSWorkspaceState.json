@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\API",
+    "\\API\\Data",
+    "\\client",
+    "\\client\\src",
+    "\\client\\src\\app",
+    "\\client\\src\\app\\lists"
+  ],
+  "SelectedNode": "\\API\\Data\\DataContext.cs",
+  "PreviewInSolutionExplorer": false
+}

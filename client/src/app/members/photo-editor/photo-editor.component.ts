@@ -15,11 +15,11 @@ import { environment } from 'src/app/environments/environment';
 })
 export class PhotoEditorComponent implements OnInit {
   @Input()
-  member!: Member;
-  uploader!: FileUploader;
+  member: Member;
+  uploader: FileUploader;
   hasBaseDropzoneOver = false;
   baseUrl = environment.apiUrl;
-  user!: User;
+  user: User;
 
   constructor(private accountService: AccountService, private memberService: MembersService) { 
     this.accountService.currentUser$.pipe(take(1)).subscribe(user => this.user = user);

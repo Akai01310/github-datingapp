@@ -68,13 +68,14 @@ D:\Worksqace\datingapp\api\obj\Debug\net7.0\API.AssemblyInfo.cs
 D:\Worksqace\datingapp\api\obj\Debug\net7.0\API.csproj.CoreCompileInputs.cache
 D:\Worksqace\datingapp\api\obj\Debug\net7.0\API.MvcApplicationPartsAssemblyInfo.cs
 D:\Worksqace\datingapp\api\obj\Debug\net7.0\API.MvcApplicationPartsAssemblyInfo.cache
+D:\Worksqace\datingapp\api\obj\Debug\net7.0\API.sourcelink.json
+D:\Worksqace\datingapp\api\obj\Debug\net7.0\staticwebassets.build.json
+D:\Worksqace\datingapp\api\obj\Debug\net7.0\staticwebassets.development.json
 D:\Worksqace\datingapp\api\obj\Debug\net7.0\staticwebassets\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props
 D:\Worksqace\datingapp\api\obj\Debug\net7.0\staticwebassets\msbuild.build.API.props
 D:\Worksqace\datingapp\api\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.API.props
 D:\Worksqace\datingapp\api\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.API.props
 D:\Worksqace\datingapp\api\obj\Debug\net7.0\staticwebassets.pack.json
-D:\Worksqace\datingapp\api\obj\Debug\net7.0\staticwebassets.build.json
-D:\Worksqace\datingapp\api\obj\Debug\net7.0\staticwebassets.development.json
 D:\Worksqace\datingapp\api\obj\Debug\net7.0\scopedcss\bundle\API.styles.css
 D:\Worksqace\datingapp\api\obj\Debug\net7.0\API.csproj.CopyComplete
 D:\Worksqace\datingapp\api\obj\Debug\net7.0\API.dll
@@ -82,4 +83,3 @@ D:\Worksqace\datingapp\api\obj\Debug\net7.0\refint\API.dll
 D:\Worksqace\datingapp\api\obj\Debug\net7.0\API.pdb
 D:\Worksqace\datingapp\api\obj\Debug\net7.0\API.genruntimeconfig.cache
 D:\Worksqace\datingapp\api\obj\Debug\net7.0\ref\API.dll
-D:\Worksqace\datingapp\api\obj\Debug\net7.0\API.sourcelink.json

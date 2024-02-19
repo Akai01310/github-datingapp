@@ -30,7 +30,7 @@ namespace API.Controllers
         [HttpPost("register")]
         public async Task<ActionResult<UserDto>> Register(RegisterDto registerDto)
         {
-            if (await UserExists(registerDto.UserName)) return BadRequest("Username is taken");
+            if (await UserExists(registerDto.Username)) return BadRequest("Username is taken");
 
             var user = //_mapper.Map<AppUser>(registerDto);
                         new AppUser {
@@ -42,7 +42,7 @@ namespace API.Controllers
                         };
             using var hmac = new HMACSHA512();
 
-            user.UserName = registerDto.UserName.ToLower();
+            user.UserName = registerDto.Username.ToLower();
             user.PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes("Pa$$w0rd"));
             user.PasswordSalt = hmac.Key;
 

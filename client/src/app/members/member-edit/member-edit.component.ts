@@ -13,9 +13,9 @@ import { MembersService } from 'src/app/_services/members.service';
 })
 export class MemberEditComponent implements OnInit {
   @ViewChild('editForm')
-  editForm!: NgForm;
-  member!: Member;
-  user!: User;
+  editForm: NgForm;
+  member: Member;
+  user: User;
   toastr: any;
   @HostListener('window:beforeunload', ['$event']) unloadNotification($event: any) {
     if (this.editForm.dirty) {

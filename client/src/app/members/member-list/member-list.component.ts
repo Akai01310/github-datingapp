@@ -11,10 +11,10 @@ import { User } from 'src/app/_models/user';
   styleUrls: ['./member-list.component.css']
 })
 export class MemberListComponent implements OnInit {
-  members!: Member[];
-  pagination!: Pagination;
+  members: Member[];
+  pagination: Pagination | undefined;
   userParams: UserParams;
-  user!: User;
+  user: User | undefined;
   genderList = [{ value: 'male', display: 'Males' }, { value: 'female', display: 'Females' }];
 
   constructor(private memberService: MembersService) {
@@ -27,7 +27,7 @@ export class MemberListComponent implements OnInit {
 
   loadMembers() {
     this.memberService.setUserParams(this.userParams);
-    this.memberService.getMembers(this.userParams).subscribe((response: { result: Member[]; pagination: Pagination; }) => {
+    this.memberService.getMembers(this.userParams).subscribe(response => {
       this.members = response.result;
       this.pagination = response.pagination;
     })

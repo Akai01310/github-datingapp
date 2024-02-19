@@ -11,8 +11,8 @@ import { Router } from '@angular/router';
 })
 export class RegisterComponent implements OnInit {
   @Output() cancelRegister = new EventEmitter();
-  registerForm!: FormGroup;
-  maxDate!: Date;
+  registerForm: FormGroup;
+  maxDate: Date;
   validationErrors: string[] = [];
 
   constructor(private accountService: AccountService, private toastr: ToastrService, 
@@ -34,16 +34,18 @@ export class RegisterComponent implements OnInit {
       country: ['', Validators.required],
       password: ['', [Validators.required, 
         Validators.minLength(4), Validators.maxLength(8)]],
-      // confirmPassword: ['', [Validators.required, this.matchValues('password')]]
+      confirmPassword: ['', [Validators.required, this.matchValues('password')]]
     })
   }
 
-  // matchValues(matchTo: string): ValidatorFn {
-  //   return (control: AbstractControl) => {
-  //     return control?.value === control?.parent?.controls[matchTo].value
-  //       ? null : {isMatching: true}
-  //   }
-  // }
+  matchValues(matchTo: any): ValidatorFn {
+    return (control: AbstractControl) => {
+      let con = control?.parent?.controls as any;
+      if(con)
+      return control?.value === con[matchTo].value ? null : {isMatching: true};
+      else return null;
+    }
+  }
 
   register() {
     this.accountService.register(this.registerForm.value).subscribe(response => {

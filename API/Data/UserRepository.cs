@@ -56,11 +56,6 @@ namespace API.Data
                     userParams.pageNumber, userParams.PageSize);
         }
 
-        public Task GetMembersAsync()
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task<AppUser> GetUserByIdAsync(int id)
         {
             return await _context.Users.FindAsync(id);
@@ -74,10 +69,6 @@ namespace API.Data
         
         }
 
-        public Task GetUserByUsernameAsync(string username)
-        {
-            throw new NotImplementedException();
-        }
 
         public async Task<IEnumerable<AppUser>> GetUsersAsync()
         {
@@ -94,11 +85,6 @@ namespace API.Data
         public void Update(AppUser user)
         {
             _context.Entry(user).State = EntityState.Modified;
-        }
-
-        Task<PagedList<MemberDto>> IUserRepository.GetMembersAsync(UserParams userParams)
-        {
-            throw new NotImplementedException();
         }
     }
 }

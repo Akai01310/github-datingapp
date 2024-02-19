@@ -11,7 +11,6 @@ import { MembersService } from 'src/app/_services/members.service';
 export class MemberCardComponent implements OnInit{
   @Input()
   member!: Member;
-presence: any;
 
   constructor(private memberService: MembersService, private toastr: ToastrService ) { }
 

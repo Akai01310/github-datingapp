@@ -55,11 +55,6 @@ namespace API.Data
                 likesParams.pageNumber, likesParams.PageSize);
         }
 
-        public Task<PagedList<LikeDto>> GetUserLikes(Interfaces.LikesParams likesParams)
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task<AppUser> GetUserWithLikes(int userId)
         {
             return await _context.Users

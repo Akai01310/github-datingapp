@@ -12,7 +12,6 @@ import { MembersService } from 'src/app/_services/members.service';
   styleUrls: ['./member-detail.component.css']
 })
 export class MemberDetailComponent implements OnInit{
-[x: string]: any;
   // @ViewChild('memberTabs', { static: true })
   // memberTabs!: TabsetComponent;
   member!: Member;

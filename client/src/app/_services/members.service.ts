@@ -18,7 +18,6 @@ export class MembersService {
   memberCache = new Map();
   user!: User;
   userParams!: UserParams;
-  getPaginationHeaders: any;
 
   constructor(private http: HttpClient, private accountService: AccountService) {
     this.accountService.currentUser$.pipe(take(1)).subscribe(user => {
@@ -97,9 +96,4 @@ export class MembersService {
     params = params.append('predicate', predicate);
     return this.getPaginatedResult<Partial<Member[]>>(this.baseUrl + 'likes', params, this.http);
   }
-  getPaginatedResult<T>(arg0: string, params: any, http: HttpClient) {
-    throw new Error('Method not implemented.');
-  }
-
-  
 }

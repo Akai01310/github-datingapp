@@ -8,6 +8,7 @@ using API.Interfaces;
 using API.Services;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace API.Extensions
 {

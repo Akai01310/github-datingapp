@@ -9,11 +9,11 @@ import { MembersService } from '../_services/members.service';
   styleUrls: ['./lists.component.css']
 })
 export class ListsComponent implements OnInit {
-  members: Partial<Member[]> | undefined;
+  members: Partial<Member[]>;
   predicate = 'liked';
   pageNumber = 1;
   pageSize = 5;
-  pagination: Pagination | undefined;
+  pagination: Pagination;
 
   constructor(private memberService: MembersService) { }
 

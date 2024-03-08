@@ -12,9 +12,9 @@ import { User } from 'src/app/_models/user';
 })
 export class MemberListComponent implements OnInit {
   members: Member[];
-  pagination: Pagination | undefined;
+  pagination: Pagination;
   userParams: UserParams;
-  user: User | undefined;
+  user: User;
   genderList = [{ value: 'male', display: 'Males' }, { value: 'female', display: 'Females' }];
 
   constructor(private memberService: MembersService) {

@@ -1,0 +1,8 @@
+import { HasRoleDirective } from './_directives/has-role.directive';
+
+describe('HasRoleDirective', () => {
+  it('should create an instance', () => {
+    const directive = new HasRoleDirective();
+    expect(directive).toBeTruthy();
+  });
+});

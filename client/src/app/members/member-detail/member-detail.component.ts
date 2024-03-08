@@ -4,13 +4,11 @@ import { NgxGalleryAnimation } from '@kolkov/ngx-gallery';
 import { NgxGalleryImage } from '@kolkov/ngx-gallery/lib/ngx-gallery-image';
 import { NgxGalleryOptions } from '@kolkov/ngx-gallery/lib/ngx-gallery-options';
 import { TabDirective, TabsetComponent } from 'ngx-bootstrap/tabs';
-import { take } from 'rxjs';
 import { Member } from 'src/app/_models/member';
 import { Message } from 'src/app/_models/message';
 import { User } from 'src/app/_models/user';
-import { AccountService } from 'src/app/_services/account.service';
-import { MembersService } from 'src/app/_services/members.service';
 import { MessageService } from 'src/app/_services/message.service';
+// import { PresenceService } from 'src/app/_services/presence.service';
 
 @Component({
   selector: 'app-member-detail',
@@ -26,11 +24,8 @@ export class MemberDetailComponent implements OnInit{
   messages: Message[] = [];
   user: User;
 
-  constructor(private route: ActivatedRoute, private memberService: MembersService,
-    private messageService: MessageService, private accountService: AccountService,
-    private router: Router) { 
-      this.accountService.currentUser$.pipe(take(1)).subscribe(user => this.user = user);
-      this.router.routeReuseStrategy.shouldReuseRoute = () => false;
+  constructor(private route: ActivatedRoute,
+    private messageService: MessageService) { 
     }
 
   ngOnInit() {
